@@ -1,0 +1,25 @@
+<h1>HearthPwn User</h1>
+
+Remove: {{username}}
+Submitted: {{submitted}}
+<div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <label for="username">Username</label>
+        <input id="username"
+               type="text"
+               required
+               [(ngModel)]="username"
+               name="username"/>
+
+        <button type="submit" [disabled]="!counter.form.valid">Submit</button>
+    </form>
+</div>
+<div [hidden]="!submitted">
+    Current User: <strong>{{username}}</strong>
+    <a (click)="resetForm()">Change User</a>
+</div>
+
+<div *ngFor="let card of cards">
+    <img src="{{card.img}}" />
+    {{card.name}}
+</div>

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipDefaultLibCheck": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es5",
+
+        "lib": [ "es6", "dom" ],
+        "types": [ "node" ]
+    },
+  "exclude": [ "bin", "node_modules" ],
+  "atom": { "rewriteTsconfig": false }
+}
